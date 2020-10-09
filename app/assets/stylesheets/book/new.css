@@ -1,0 +1,48 @@
+body {
+  background-color: rgb(114, 151, 161);
+}
+
+ul {
+  padding: 0;
+  list-style-type: disc;
+}
+ 
+li {
+  padding: 0 10px 10px 10px;
+  font-size: 18px;
+  font-weight: bold;
+  float: left;
+  writing-mode: tb-rl;
+  writing-mode: vertical-rl; 
+  -moz-writing-mode: vertical-rl;
+  -o-writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+}
+
+.item {
+  margin: 0.5vw;
+  border: medium solid rgb(0, 0, 0);
+  width: 12vw;
+  height: auto;
+  background-color: rgb(246, 253, 255);
+}
+
+.name {
+  min-height: 25vh;
+  padding: 5px;
+  white-space: nowrap;
+  overflow: scroll;
+}
+
+.contents-row {
+  width: 100vw;
+  margin-top: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.shelf {
+  
+}
