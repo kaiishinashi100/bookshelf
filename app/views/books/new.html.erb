@@ -1,6 +1,6 @@
 <div class="contents row">
   <div class="container">
-    <h3>投稿する</h3>
+    <h3>本を登録する</h3>
     <%= form_with(model: @book, local: true) do |form| %>
       <%= form.text_field :title, placeholder: "本のタイトル" %>
       <%= form.submit "SEND" %>
