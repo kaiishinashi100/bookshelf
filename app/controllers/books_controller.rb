@@ -1,4 +1,5 @@
 class BooksController < ApplicationController
+  before_action :move_to_index, except: [:index]
 
   def index
     @books = Book.all
@@ -21,6 +22,12 @@ class BooksController < ApplicationController
 
   def book_params
     params.require(:book).permit(:title)
+  end
+
+  def move_to_index
+    unless user_signed_id?
+      redirect_to action: index
+    end
   end
 
 end
