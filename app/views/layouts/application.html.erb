@@ -10,6 +10,21 @@
   </head>
 
   <body>
+        <header class="header_right">
+        <% #if user_signed_in? %>
+          <div class="user_nav_grid-6">
+            <%= link_to "ログアウト", "#", method: :delete %>
+          </div>
+        <% #else %>
+          <div class="grid-6">
+            <%= link_to "ログイン", "#", class: "post" %>
+            <%= link_to "新規登録", "#", class: "post" %>
+          </div>
+      <div class="user_nav_grid-6">
+        <a class="post" href="/books/new">投稿する</a>
+      </div>        
+        <% #end %>
+      </header>
     <%= yield %>
     <footer>
       <p>

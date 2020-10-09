@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(114, 151, 161);
+  background-color: #CCFFCC;
 }
 
 ul {
@@ -43,6 +43,25 @@ li {
   flex-wrap: wrap;
 }
 
-.shelf {
-  
+.header__bar_row {
+  display: flex;
+}
+
+.header_right {
+  display: flex;
+  margin: 1vw;
+  width: auto;
+  height: 5vw;
+
+}
+
+.user_nav_grid-6 {
+  color: red;
+  background-color: white;
+  padding: auto 1;
+}
+
+.grid-6 {
+  color: red;
+  background-color: white;
 }
