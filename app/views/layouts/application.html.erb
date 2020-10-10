@@ -10,28 +10,28 @@
   </head>
 
   <body>
-        <header class="header_right">
-        <% if user_signed_in? %>
-          <div class="header__bar_row">
-            <h1 class="grid-6_name"><a href="/"><%= current_user.nickname%>の本棚</a></h1>
-          <div class="header">
-          <div class="user_nav_grid-6">
-            <%= link_to "ログアウト", "#", method: :delete %>
-          </div>
-          <div class="user_nav_grid-6">
-            <a class="post" href="/books/new">本を登録する</a>
-          </div> 
-        <% else %>
-          <div class="grid-6">
-            <%= link_to "ログイン", "#", class: "post" %>
-            <%= link_to "新規登録", new_user_registration_path, class: "post" %>
-          </div>       
-        <% end %>
-      </header>
+    <header class="header_right">
+      <% if user_signed_in? %>
+        <div class="header__bar_row">
+          <h1 class="grid-6_name"><a href="/"><%= current_user.nickname%>の本棚</a></h1>
+        </div>
+        <div class="user_nav_grid-6">
+          <%= link_to "ログアウト", "#", method: :delete %>
+        </div>
+        <div class="user_nav_grid-6">
+          <a class="post" href="/books/new">本を登録する</a>
+        </div> 
+      <% else %>
+        <div class="grid-6">
+          <%= link_to "ログイン", "#", class: "post" %>
+          <%= link_to "新規登録", new_user_registration_path, class: "post" %>
+        </div>       
+      <% end %>
+    </header>
     <%= yield %>
     <footer>
       <p>
-        Copyright Bookshelf 2019.
+        Copyright Bookshelf 2020.
       </p>
     </footer>
   </body>
