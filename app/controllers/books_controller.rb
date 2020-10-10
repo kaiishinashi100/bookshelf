@@ -29,5 +29,5 @@ class BooksController < ApplicationController
       redirect_to action: index
     end
   end
-
+ 
 end
